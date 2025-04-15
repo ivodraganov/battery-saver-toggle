@@ -45,12 +45,12 @@ class ConservationIndicator:
         self.status_item.show()
         menu.append(self.status_item)
 
-        toggle_item = Gtk.MenuItem(label="Превключи режим")
+        toggle_item = Gtk.MenuItem(label="Switch mode")
         toggle_item.connect("activate", self.toggle_status)
         toggle_item.show()
         menu.append(toggle_item)
 
-        quit_item = Gtk.MenuItem(label="Изход")
+        quit_item = Gtk.MenuItem(label="Quit")
         quit_item.connect("activate", self.quit)
         quit_item.show()
         menu.append(quit_item)
@@ -62,9 +62,9 @@ class ConservationIndicator:
 
     def get_tooltip(self):
         if self.get_status():
-            return "Режимът за икономия на батерията е включен"
+            return "Battery saver mode is ON"
         else:
-            return "Режимът за икономия на батерията е изключен"
+            return "Battery saver mode is OFF"
 
     def update_menu(self):
         self.status_item.set_label(self.get_tooltip())
