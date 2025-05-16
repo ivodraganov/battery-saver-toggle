@@ -26,28 +26,6 @@
     ```bash
     python3 battery-saver-toggle.py
     ```
-4. Add no root requirements: <br><br>
-   ```sudo nano /usr/share/polkit-1/actions/com.conservationmode.policy```
-    <br>
-   <br>
-   and add this:
-<br>
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<policyconfig>
-  <action id="com.conservationmode.toggle">
-    <description>Toggle Conservation Mode</description>
-    <message>Authentication is required to toggle conservation mode.</message>
-    <defaults>
-      <allow_any>yes</allow_any>
-      <allow_inactive>yes</allow_inactive>
-      <allow_active>yes</allow_active>
-    </defaults>
-  </action>
-</policyconfig>
-```
-
 
 ## Usage
 
