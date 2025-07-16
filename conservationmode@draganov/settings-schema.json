@@ -1,6 +1,0 @@
-{
-  "conservationMode": {
-    "type": "boolean",
-    "default": false
-  }
-}
